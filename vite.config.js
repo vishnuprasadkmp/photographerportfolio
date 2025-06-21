@@ -7,5 +7,7 @@ export default defineConfig({
   server: {
     host: true,
     port: process.env.PORT || 5173, // 👈 this line is important
+        allowedHosts: ['photographerportfolio-vij5.onrender.com']
+
   },
 })

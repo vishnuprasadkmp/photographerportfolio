@@ -1,0 +1,62 @@
+/* === Gallery Root Styling === */
+.Gallery {
+  background-color: #f9f9f9; /* Light background for gallery */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Navbar Text Color Override for Gallery === */
+.Gallery .navbar,
+.Gallery .navbar a,
+.Gallery .navbar li,
+.Gallery .navbar span,
+.Gallery .navbar button {
+  color: #faf6f7; /* Your custom navbar text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Gallery .navbar a:hover,
+.Gallery .navbar button:hover {
+  color: #f8f4f4; /* Dark hover effect */
+}
+.Gallery ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(245, 243, 243);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
+}
+
+
+/* Optional navbar spacing/styling */
+.Gallery .navbar {
+  background-color: #070000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Gallery .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.Gallery .navbar li {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* === Additional styling for Gallery Photos if needed === */
+/* If you're importing ViewPhotos styles separately, skip this */
+.Gallery .photo-grid {
+  padding: 20px 0;
+}

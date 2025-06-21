@@ -1,0 +1,150 @@
+/* === Contact Page Container === */
+.contact {
+  padding: 100px 20px 60px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #070000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .navbar li {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.contact .navbar,
+.contact .navbar a,
+.contact .navbar li,
+.contact .navbar span,
+.contact .navbar button {
+  color: #faf6f7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact .navbar a:hover,
+.contact .navbar button:hover {
+  color: #f8f4f4;
+}
+
+/* === Max-width container === */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* === Flex row for title and details === */
+.contact-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+/* === Title === */
+.contact-title {
+  flex: 1 1 40%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* === Right-side Info Blocks === */
+.contact-details {
+  flex: 1 1 55%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* === Each Info Block (Insta, Email, Location) === */
+.contact-block {
+  min-width: 200px;
+}
+
+.contact-block p {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.contact-block a,
+.contact-block h3 {
+  font-size: 1.05rem;
+  color: #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.contact-block a:hover {
+  color: #e1306c;
+}
+
+.contact-email {
+  margin-top: 15px;
+}
+
+/* === Map Styling === */
+.map-wrapper {
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.map-wrapper iframe,
+.map-wrapper > div {
+  width: 40%;
+  height: 500px;
+  border: 0;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+  .contact-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-block {
+    width: 100%;
+  }
+
+  .map-wrapper iframe {
+    height: 250px;
+  }
+}

@@ -1,0 +1,88 @@
+.EditPostPage {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url('/tea.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.EditPostPage h1 {
+  margin-bottom: 20px;
+  color: rgb(107, 46, 46);
+}
+
+/* Form Styling */
+.add-photo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  color: rgb(107, 46, 46);
+  border: 1px solid #0b0000;
+  border-radius: 10px;
+  background: transparent;
+  text-align: left;
+}
+
+/* Labels */
+.add-photo-form label {
+  font-weight: 500;
+}
+
+/* Inputs and Select */
+.add-photo-form input,
+.add-photo-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+/* File input specific */
+.add-photo-form input[type="file"] {
+  padding: 6px;
+}
+
+/* Submit Button */
+.add-photo-form button {
+  background-color: rgba(107, 46, 46, 0.85);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.add-photo-form button:hover {
+  background-color: rgb(107, 46, 46);
+}
+
+/* Logo */
+.logo {
+  width: 70px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .add-photo-form {
+    padding: 15px;
+  }
+
+  .EditPostPage h1 {
+    font-size: 24px;
+  }
+}

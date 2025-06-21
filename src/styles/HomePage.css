@@ -1,0 +1,109 @@
+/* Global Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Homepage Background */
+.HomePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/vishnu3.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  position: relative;
+}
+
+/* Header Text */
+.header-text {
+  margin-top: 10%;    /* reduced from 20% */
+  margin-left: 3%;  
+  font-size: 3rem;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 20px 40px;
+  border-radius: 15px;
+  animation: slideIn 1s ease-out;
+}
+
+.header-text h1 {
+  font-family: 'Raleway', sans-serif; /* Keep Raleway for header */
+  font-weight: 700;
+  color: #fefefe;
+  margin: 0;
+}
+
+/* Delayed Animation */
+.delayed {
+  color: #060000;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 2s;
+  transition: all 0.4s ease-in-out;
+}
+
+.HomePage > p {
+  max-width: 450px;         /* reduce width */
+  margin: 50px 4% 10px;     /* adjust margin */
+  padding: 0 10px;
+  font-size: 1.2em;         /* slightly smaller */
+  text-align: center;         /* optional: align text left */
+  border-radius: 10px;
+  line-height: 1.4;         /* tighter line height */
+  animation: colorFade 5s forwards;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  white-space: normal;      /* allow wrapping */
+}
+
+
+/* Gmail Section */
+#gmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: transparent;
+}
+
+#gmail a {
+  color: rgba(185, 176, 176, 0.637);
+  text-decoration: dotted;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: 'Quicksand', sans-serif; /* Apply here too */
+}
+
+#gmail a:hover {
+  color: rgb(255, 255, 254);
+  text-decoration: underline;
+}
+
+/* Keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes colorFade {
+  to {
+    color: rgb(250, 250, 250);
+  }
+}

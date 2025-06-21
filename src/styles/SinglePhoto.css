@@ -1,0 +1,89 @@
+.single-post {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.single-post:hover {
+  transform: translateY(-5px);
+}
+
+.single-post h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.single-post img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px; /* Fixed height */
+  object-fit: cover; /* Ensures image fills area without distortion */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.single-post p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.single-post strong {
+  color: #222;
+}
+
+.single-post a,
+.single-post button {
+  margin: 10px 8px 0;
+  background: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  vertical-align: middle;
+}
+
+.single-post a:hover,
+.single-post button:hover {
+  background-color: #e0e0e0;
+}
+
+.single-post button svg,
+.single-post a svg {
+  font-size: 24px;
+  color: #555;
+}
+
+.single-post button:hover svg {
+  color: #c0392b; /* Red for delete */
+}
+
+.single-post a:hover svg {
+  color: #2980b9; /* Blue for edit */
+}
+
+/* Loader and Error Styles */
+.loader,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 100px;
+}
+.button-group {
+  display: flex;
+  justify-content: center; /* You can change to 'flex-end' if you want buttons on the right */
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+

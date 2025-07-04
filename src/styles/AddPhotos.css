@@ -9,7 +9,7 @@
   padding: 20px;
   background-color: hsl(0, 0%, 95%);
   text-align: center;
-   background-image: url('/tea.jpg');
+   background-image: url('/6 (3).jpg');
   background-size: cover; 
   background-repeat: no-repeat;
  background-position: center;
@@ -17,7 +17,7 @@
 
 .AllProducts h1 {
   margin-bottom: 20px;
-  color: rgb(107, 46, 46);
+  color: rgb(237, 234, 234);
 }
 
 .add-photo-form {
@@ -27,8 +27,8 @@
   width: 100%;
   max-width: 400px;
   padding: 20px;
-  color: rgb(107, 46, 46);
-  border: 1px solid #0b0000;
+  color: rgb(237, 232, 232);
+  border: 1px solid #0e0101;
   border-radius: 10px;
   background:transparent;
   text-align: left;  /* ✅ ensures labels/inputs are left-aligned */
@@ -36,6 +36,7 @@
 
 .add-photo-form label {
   font-weight: 500;
+  color: aliceblue;
 }
 
 .add-photo-form input,
@@ -46,12 +47,12 @@
 }
 
 .add-photo-form button {
-  background-color: rgba(107, 46, 46, 0.858);;
-  color: white;
+  background-color: rgba(247, 243, 243, 0.858);;
+  color: rgb(7, 0, 0);
   border: none;
   cursor: pointer;
 }
 
 .add-photo-form button:hover {
-  background-color: rgb(107, 46, 46);;
+  background-color: rgb(246, 242, 242);;
 }

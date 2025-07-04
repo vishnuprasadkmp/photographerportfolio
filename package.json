@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite --port $PORT",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite --port 5173",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+},
+
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -17,6 +18,7 @@
     "@react-google-maps/api": "^2.20.7",
     "axios": "^1.9.0",
     "bootstrap": "^5.3.6",
+    "dotenv": "^16.5.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",

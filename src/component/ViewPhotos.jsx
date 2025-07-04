@@ -14,7 +14,7 @@ const ViewPhotos = () => {
       try {
         // const res = await axios.get("http://localhost:5000/api/posts");
 
-        const res = await axios.get("https://photographerportfolioserver-4.onrender.com/api/posts");
+        const res = await axios.get("https://photographerportfolioserver-3.onrender.com/api/posts");
         const data = res.data.payload || [];
         setPhotos(Array.isArray(data) ? data : []);
         setFilteredPhotos(Array.isArray(data) ? data : []);

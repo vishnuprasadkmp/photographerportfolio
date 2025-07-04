@@ -33,7 +33,7 @@ function AddPhotos() {
     formData.append("post", photos.post); // file field
 
     axios
-          .post("https://photographerportfolioserver-4.onrender.com/api/posts", formData, {
+          .post("https://photographerportfolioserver-3.onrender.com/api/posts", formData, {
 
       // .post("http://localhost:5000/api/posts", formData, {
         headers: {

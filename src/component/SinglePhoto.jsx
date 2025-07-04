@@ -21,7 +21,7 @@ const SinglePhoto = () => {
         console.log("Fetching post with ID:", id);
                 // const res = await axios.get(`http://localhost:5000/api/posts/${id}`);
 
-        const res = await axios.get(`https://photographerportfolioserver-4.onrender.com/api/posts/${id}`);
+        const res = await axios.get(`https://photographerportfolioserver-3.onrender.com/api/posts/${id}`);
         console.log("Fetched data:", res.data);
         setPost(res.data.payload);
       } catch (err) {
@@ -37,9 +37,9 @@ const SinglePhoto = () => {
   // ✅ Delete post
   const removePhoto = async (id, name) => {
     try {
-            // await axios.delete(`http://localhost:5000/api/posts/${id}`);
+            await axios.delete(`http://localhost:5000/api/posts/${id}`);
 
-      await axios.delete(`https://photographerportfolioserver-4.onrender.com/api/posts/${id}`);
+      // await axios.delete(`https://photographerportfolioserver-3.onrender.com/api/posts/${id}`);
       toast.success(`${name} is removed`);
       navigate('/');
     } catch (error) {

@@ -17,7 +17,7 @@ const EditPost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-                const res = await axios.get(`https://photographerportfolioserver-4.onrender.com/api/posts/${id}`);
+                const res = await axios.get(`https://photographerportfolioserver-3.onrender.com/api/posts/${id}`);
 
         // const res = await axios.get(`http://localhost:5000/api/posts/${id}`);
         const data = res.data.payload;
@@ -58,7 +58,7 @@ const EditPost = () => {
     }
 
     try {
-            await axios.put(`https://photographerportfolioserver-4.onrender.com/api/posts/${id}`, formData, {
+            await axios.put(`https://photographerportfolioserver-3.onrender.com/api/posts/${id}`, formData, {
 
       // await axios.put(`http://localhost:5000/api/posts/${id}`, formData, {
         headers: {
